@@ -1,7 +1,6 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
-import time
 from serial import Serial
 import threading
 
@@ -23,8 +22,6 @@ class Target1Node(Node):
     def __init__(self):
         super().__init__('target1')
         self.publisher = self.create_publisher(String, 'target1/gpio', 10)
-        # self.timer = self.create_timer(1.0, self.timer_callback)
-        # self.ch = 'H'
         
     def timer_callback(self):
         msg = String()
