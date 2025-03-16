@@ -17,7 +17,7 @@ def read_serial(node):
                 msg = String()
                 msg.data = chr(buf[0])
                 node.publisher.publish(msg)
-                print(msg.data)
+                node.get_logger().info(msg.data)
 
 class Target1Node(Node):
     def __init__(self):
