@@ -1,0 +1,58 @@
+# Python-специфичные файлы
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+build/
+install/
+log/
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.venv/
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ROS 2-специфичные файлы и каталоги
+ament_cmake/install/  # Для проектов CMake
+ament_python/install/ # Для проектов Python
+build/
+install/
+log/
+rcl_interfaces/build/
+rclpy/build/
+rcutils/build/
+rmw*/build/
+rosidl*/build/
+_ament_cmake_processed_files
+_ament_package_layout
+.colcon_ignore
+colcon_ws/
+
+# Общие файлы и каталоги
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.orig
+*~
+\#*#
+*.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.orig
+
+# Файлы конфигурации, которые могут содержать локальные настройки
+# (раскомментируйте, если вы хотите их игнорировать, но будьте осторожны)
+# *.ini
+# *.cfg
+# *.env
