@@ -7,7 +7,7 @@ import threading
 lock = threading.Lock()
 
 def read_serial(node):
-    sp = Serial('/dev/ttyACM0', baudrate=12000000)
+    sp = Serial('/dev/ttyACM2', baudrate=12000000)
     sp.timeout = 0
     while True:
         buf = sp.read(size=1024)
